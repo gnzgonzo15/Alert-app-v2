@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mapa_fragment">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:fillViewport="true"
+        tools:context=".Mapamenu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:background="?android:attr/windowBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:menu="@menu/navigation" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70sp"
+                >
+
+                <TextView
+                    android:id="@+id/titleTextNetwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="LOCALIZACION DE INTERNET"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/locationControllerNetwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/titleTextNetwork"
+                    android:text="Actualizar"
+                    />
+                             <!-- android:onClick="toggleNetworkUpdates" -->
+
+
+                <TextView
+                    android:id="@+id/longitudeTextNetwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/locationControllerNetwork"
+                    android:text="Latitud"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/longitudeValueNetwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/locationControllerNetwork"
+                    android:layout_marginStart="91dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="0.0000"
+                    android:textSize="20sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="91dp" />
+
+                <TextView
+                    android:id="@+id/latitudeTextNetwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/longitudeTextNetwork"
+                    android:text="Longitud"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/latitudeValueNetwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/longitudeValueNetwork"
+                    android:layout_below="@+id/longitudeTextNetwork"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="0.0000"
+                    android:textSize="20sp"
+                    android:layout_alignLeft="@+id/longitudeValueNetwork" />
+
+                <View
+                    android:id="@+id/separator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/latitudeValueNetwork"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/material_blue_grey_800"/>
+
+                <Button
+                    android:id="@+id/enviarmaill"
+                    android:layout_marginTop="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separator2"
+                    android:layout_centerHorizontal="true"
+                    android:text="Enviar ubicacion"/>
+
+                <Button
+                    android:id="@+id/mostrarmapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/enviarmaill"
+                    android:text="Mostrar mapa"
+                    android:layout_marginLeft="15sp"
+
+                    />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

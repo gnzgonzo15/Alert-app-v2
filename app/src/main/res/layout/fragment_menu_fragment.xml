@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="130sp"
+            android:layout_height="130sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80sp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu"
+
+            />
+
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/imagen"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/material_blue_grey_800"/>
+
+        <RadioButton
+            android:id="@+id/radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="250sp"
+            android:text="Activar seguridad"
+
+            />
+
+        <Button
+            android:id="@+id/btnactivar"
+            android:layout_width="100sp"
+            android:layout_height="35sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="300sp"
+            android:text="Guardar" />
+
+        <TextView
+
+            android:layout_width="357dp"
+            android:layout_height="50sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="350sp"
+            android:layout_marginEnd="350sp"
+            android:layout_marginLeft="350sp"
+            android:layout_marginRight="350sp"
+            android:layout_marginStart="350sp"
+            android:layout_marginTop="350sp"
+            android:gravity="top"
+            android:text="No olvides activar la seguridad de tu dispositivo"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

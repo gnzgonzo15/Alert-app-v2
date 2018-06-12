@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sonidos_fragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagen2"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55sp"
+        android:src="@drawable/sonidos"
+        />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/imagen2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/material_blue_grey_800"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginTop="180sp"
+        android:text="Alertas"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="#000000"
+
+        />
+
+
+    <ListView
+        android:layout_marginTop="200sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/listM"
+        />
+
+    </RelativeLayout>
+
+</FrameLayout>
